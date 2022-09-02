@@ -9,7 +9,8 @@
                                         document.getElementById("mainDiv").innerHTML = alert(this.responseText);
                 }
          };
-         xhttp.open("GET", "https://api.aboutyou.com/user/me/wishlist/bapi?with=items.product.attributes:key(brand%>
+        xhttp.open("GET", "https://api.aboutyou.com/user/me/wishlist/bapi?with=items.product.attributes:key(brand%7CbrandLogo%7CbrandAlignment%7CcaptchaRequired%7Cname%7CquantityPerPack%7CplusSize%7CcolorDetail%7CsponsorBadge%7CsponsoredType%7CmaternityNursing%7Cexclusive%7Cgenderage%7CspecialSizesProduct%7CmaterialStyle%7CsustainabilityIcons%7CassortmentType%7CdROPS%7CbrandCooperationBadge%7CsecondHandType),items.product.advancedAttributes:key(materialCompositionTextile%7Csiblings),items.product.variants,items.product.variants.attributes:key(shopSize%7CcategoryShopFilterSizes%7Ccup%7Ccupsize%7CvendorSize%7Clength%7Cdimension3%7CsizeType%7Csort),items.product.variants.lowestPriorPrice,items.product.images.attributes:legacy(false):key(imageNextDetailLevel%7CimageBackground%7CimageFocus%7CimageGender%7CimageType%7CimageView),items.product.priceRange,items.product.lowestPriorPrice&shopId=431&cacheBreaker=1662060321084&forceNonLegacySuffix=true", true);
+
 //         xhttp.setRequestHeader("X-Auth-Token",'571722a1-3aa9-41d9-8d17-d97e4d9ad24e');
 xhttp.withCredentials = true;
          xhttp.send();
